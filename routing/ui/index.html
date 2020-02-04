@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			color: #fff;
+			font-size: 16px;
+		}
+
+		ul,p,h1,h2,h3,h4,h5,h6 {
+			padding: 0;
+			margin: 0;
+		}
+
+		 .home {
+			padding:60px 0 50px;
+			background: #673AB7;
+  		}
+
+  		 .about {
+			padding:60px 0 50px;
+			background-color: #009688;
+  		}
+
+  		 .contact {
+			padding:60px 0 50px;
+			background-color: #17a2b8;
+  		}
+
+  		header {
+  			background: #fff;
+  			position: fixed;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			padding:20px 0;
+  		}
+
+  		ul li {
+  			list-style: none;
+  			display: inline-block;
+  		}
+
+  		ul li a {
+  			color:#495057;
+  			padding: 5px 15px;
+  		}
+
+  		ul li a:hover {
+  			color: #495057;
+  		}
+
+  		.main {
+  			margin-top:64px;
+  			text-align: center;
+  			height: 70vh;
+  		}
+
+
+	</style>	
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header_in">
+				<ul class="menu">
+   	  	 			<li><a href="/home" class="active">Home</a></li>
+   	  	 			<li><a href="/about">About</a></li>
+   	  	 			<li><a href="/contact">Contact</a></li>
+   	  	 		</ul>
+			</div>
+		</div>
+	</header>
+   
+
+   <!-- views -->
+
+   {%RENDER%}
+ 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script type="text/javascript">
+ 	// $('.menu li a').click(function() {
+ 	// 	$('.menu li a').removeClass('active');
+ 	// 	$(this).addClass('active');
+ 	// });
+ </script>
+</body>
+</html>
